@@ -29,8 +29,15 @@ function displayResult(response) {
     body.appendChild(first);
     let p = document.createElement("p");
     p.classList.add("parg");
-    let description = data.body.split(" ").slice(0, 19).join(" ");
-    p.innerText = description;
+    let description = data.body.split(" ");
+    console.log(description.length);
+    console.log(`${description} ...`);
+    if (description.length > 20) {
+      let paragraph = data.body.split(" ").slice(0, 19).join(" ");
+      p.innerText = `${paragraph} ...`;
+    } else {
+      p.innerText = description;
+    }
     //slice nerde başlayıp nerde biteceğini ister
     right.appendChild(p);
     let left = document.createElement("div");
