@@ -1,5 +1,6 @@
 body {
     font-family: tahoma;
+    margin: 20px;
   }
   .first {
     display: flex;
@@ -9,11 +10,14 @@ body {
     border: 1px solid #d3d3d3;
     border-radius: 2px;
     gap: 3vw;
+    height: 100%;
   }
   .left {
+
     display: flex;
     align-items: center;
     margin-block: 10vh;
+    height: 100%;
   
   
   }
@@ -36,4 +40,11 @@ body {
     margin-top: 8px;
     color: gray;
   }
-  
+  .leftTwo{
+    width: 30px;
+    background-color:red;
+    color: red;
+    background: red;
+    height: 80%;
+
+  }
